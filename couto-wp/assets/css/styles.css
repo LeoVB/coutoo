@@ -1,0 +1,563 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto\ Regular/roboto-regular-webfont.woff2') format('woff2'),
+        url('../fonts/Roboto\ Regular/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto\ Bold/roboto-bold-webfont.woff2') format('woff2'),
+        url('../fonts/Roboto\ Bold/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/Roboto\ Black/roboto-black-webfont.woff2') format('woff2'),
+        url('../fonts/Roboto\ Black/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Estilo para los puntos de navegación (dots) */
+.owl-dots {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo para los puntos individuales */
+.owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #000;
+    border-radius: 50%;
+}
+
+
+.img-sale {
+    width: 125px;
+    height: 155px;
+}
+
+
+.contenedor{
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+
+}
+
+.sale-contenedor{
+    height: 130px;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    flex-direction: column;
+    padding: 0px 5px;
+    margin-top: 10px; */
+    
+}
+
+.image-prod{
+    height: 100px;
+}
+
+.product-wrapper{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sale-text{
+       /* height: 60px; */
+       display: flex;
+       flex-direction: column;
+       /* justify-content: center; */
+       /* align-items: center; */
+       font-size: 10px;
+       text-align: center;
+}
+
+.sale-images{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.producto-image{
+    /* width: 100%;
+    height: 70%;    */
+   height: 90px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.carrito-image{
+    height: 20px;
+    position: absolute;
+    top:5px;
+    right: 5px;
+
+
+}
+
+.flash-sale-contenedor{
+    height: 125px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+ }
+
+.gray-bg{
+    background-color: rgb(199, 183, 183);
+}
+
+h4{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.h4-white{
+    color: #fff;
+}
+
+.simple-button{
+    border: none;
+    padding: 6px 20px;
+    /* border-radius: 5px; */
+    font-size: 10px;
+    /* margin: 10px 0; */
+}
+
+.black-button{
+    background: #000;
+    color: #fff;
+}
+
+/* #masthead {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0 10px 0;
+}
+#masthead .logo {
+    max-width: 100px;
+}
+#masthead .latas {
+    max-width: 240px;
+}
+#masthead h2 {
+    text-align: center;
+    font-family: 'Roboto Black';
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    background: #ea0a2a;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 15px 0 20px 0;
+}
+.title1 {
+    color: #ea0a2a;
+    text-transform: uppercase;
+    font-family: 'Roboto Black';
+    margin: 10px 0 15px 0;
+    line-height: 1;
+    font-size: 21px;
+}
+.title2 {
+    line-height: 1;
+    color: #4D4D4D;
+    font-family: 'Roboto Regular';
+    font-size: 20px;
+    margin: 10px 0;
+}
+form p {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+form a {
+    background: #da0a29;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto Black';
+    margin: 10px 0 15px 0;
+    line-height: 1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 10px #0000002e;
+}
+form a:hover {
+    text-decoration: none;
+    color: white;
+    background: #da0a29;
+}
+form input {
+    overflow: visible;
+    border: solid 2px #ADB0B1;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+form input:focus-visible {
+    outline: 2px solid #ea0a2a;
+    border: solid 2px transparent;
+}
+.wpcf7-field-group:first-child .wpcf7-field-group-add  {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -54px;
+}
+.wpcf7-field-group .wpcf7-field-group-add {
+    display: none;
+}
+.wpcf7-field-group-add  {
+    background-color: #ADB0B1;
+    color: white;
+    border: none;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    font-size: 36px;
+    font-family: 'Roboto Black';
+    box-shadow: -3px 2px 4px 0px #00000069;
+}
+.wpcf7-field-group-remove  {
+    background-color: #ea0a2a;
+    color: white;
+    border: none;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    padding: 5px 0 8px 0;
+    font-size: 36px;
+    font-family: 'Roboto Black';
+    margin: 0px;
+    border-radius: 5px;
+    margin-left: 12px;
+    box-shadow: -3px 2px 4px 0px #00000069;
+}
+.repeterfields p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+}
+#productsfields-groups .wpcf7-field-group:first-child .repeterfields:first-child {
+    max-width: 99%;
+}
+#productsfields-groups .wpcf7-field-group {
+    display: flex;
+    border-bottom: 2px solid #adb0b126;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+#productsfields-groups {
+    position: relative;
+    margin-bottom: 65px;
+}
+.repeterfields input {
+    margin-bottom: 0px;
+}
+.repeterfields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainsection {
+    padding: 20px 0;
+}
+.modal-footer {
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.modal-footer h2 {
+    border-bottom: 2px solid #adb0b13b;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom-width: 2px;
+}
+.modal-footer input {
+    background: #da0a29;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Black';
+    margin: 10px 0 15px 0;
+    line-height: 1;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px;
+    box-shadow: -3px 2px 4px 0px #00000069;
+}
+.modal-footer button {
+    font-family: 'Roboto Black';
+    width: 50%;
+    height: auto;
+    line-height: 1;
+    padding: 5px 0px;
+    margin: 0px;
+    box-shadow: -3px 2px 4px 0px #00000069;
+}
+.modal-footer input {
+    margin-bottom: 0px;
+}
+.wpcf7-spinner {
+    display: none!important;
+}
+.wpcf7-not-valid-tip {
+    position: relative;
+    top: -9px;
+    font-size: 10px;
+}
+.wpcf7-field-groups .wpcf7-not-valid-tip {
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+}
+.modal-content {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding: 20px 10px;
+}
+.modal-content .title1 {
+    color: #ea0a2a;
+    text-transform: uppercase;
+    font-family: 'Roboto Black';
+    margin: 10px 0 15px 0;
+    line-height: 1;
+    font-size: 21px;
+    border-bottom: 2px solid #adb0b140;
+    padding-bottom: 8px;
+    margin-bottom: 9px;
+}
+.modal-content p {
+    text-align: center;
+    margin-bottom: 0px;
+    width: 100%;
+}
+.ui-menu {
+    height: 150px;
+    max-width: 200px;
+    overflow: scroll;
+}
+.ui-menu li{
+    border-bottom: 2px solid #adb0b126;
+    font-family: 'Roboto Regular';
+    font-size: 12px;
+    margin: 10px 0;
+} */
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #masthead {
+        padding: 26px 0 1px 0;
+    }
+
+    #masthead .logo {
+        max-width: 174px;
+    }
+
+    .wpcf7-form-control-wrap {
+        width: 100%;
+    }
+
+    .title1 {
+        margin: 5px 0 20px 0;
+        font-size: 25px;
+    }
+
+    .title2 {
+        font-size: 22px;
+        margin: 10px 0 20px 0;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .wpcf7-form-control-wrap {
+        width: 100%;
+    }
+
+    .title1 {
+        margin: 5px 0 20px 0;
+        font-size: 25px;
+    }
+
+    .title2 {
+        font-size: 22px;
+        margin: 10px 0 20px 0;
+    }
+
+    #masthead .logo {
+        max-width: 171px;
+    }
+
+    #masthead h2 {
+        font-size: 34px;
+    }
+
+    #masthead .latas {
+        max-width: 305px;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .wpcf7-form-control-wrap {
+        width: 100%;
+    }
+
+    .title1 {
+        margin: 5px 0 20px 0;
+        font-size: 25px;
+    }
+
+    .title2 {
+        font-size: 22px;
+        margin: 10px 0 20px 0;
+    }
+
+    #masthead .logo {
+        max-width: 171px;
+    }
+
+    #masthead h2 {
+        font-size: 34px;
+    }
+
+    #masthead .latas {
+        max-width: 305px;
+    }
+
+    #masthead {
+        background-position: 100% 77%;
+    }
+
+    form {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .wpcf7-form-control-wrap {
+        width: 100%;
+    }
+
+    .title1 {
+        margin: 5px 0 20px 0;
+        font-size: 25px;
+    }
+
+    .title2 {
+        font-size: 22px;
+        margin: 10px 0 20px 0;
+    }
+
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1280px) {
+    .wpcf7-form-control-wrap {
+        width: 100%;
+    }
+
+    .title1 {
+        margin: 5px 0 20px 0;
+        font-size: 25px;
+    }
+
+    .title2 {
+        font-size: 22px;
+        margin: 10px 0 20px 0;
+    }
+
+    form {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    #masthead {
+        background-position: 100% 77%;
+    }
+
+    #masthead .logo {
+        max-width: 244px;
+    }
+
+    #masthead .latas {
+        max-width: 400px;
+    }
+
+    #masthead h2 {
+        font-size: 30px;
+        margin: 40px 0;
+    }
+}
